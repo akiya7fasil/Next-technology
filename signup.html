@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — NEXT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLpro+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="auth-page">
+        <a href="index.html" class="auth-brand"><i class="fas fa-gem"></i> NEXT</a>
+        <div class="auth-card">
+            <h1 class="auth-card__title">Create account</h1>
+            <p class="auth-card__subtitle">Join NEXT. Fields marked with * are required.</p>
+            <div id="auth-alert" class="auth-alert" hidden></div>
+
+            <form id="auth-signup-form" class="auth-form" action="/signup" method="post" autocomplete="on">
+                <label class="auth-form__label" for="signup-name">Full name *</label>
+                <input class="auth-form__input" type="text" id="signup-name" name="name" placeholder="Jane Doe" required>
+
+                <label class="auth-form__label" for="signup-email">Email *</label>
+                <input class="auth-form__input" type="email" id="signup-email" name="email" placeholder="you@example.com" required>
+
+                <label class="auth-form__label" for="signup-password">Password *</label>
+                <input class="auth-form__input" type="password" id="signup-password" name="password" placeholder="At least 8 characters" required minlength="8">
+
+                <label class="auth-form__label" for="signup-password2">Confirm password *</label>
+                <input class="auth-form__input" type="password" id="signup-password2" name="password_confirm" placeholder="Repeat password" required minlength="8">
+
+                <label class="auth-form__check auth-form__check--block">
+                    <input type="checkbox" name="terms" required> I agree to the <a href="#" class="auth-form__link">Terms of Service</a>
+                </label>
+
+                <button class="auth-form__submit" type="submit">Create account</button>
+            </form>
+
+            <p class="auth-card__footer">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+    </main>
+
+    <script>
+      (function () {
+        var f = document.getElementById("auth-signup-form");
+        if (!f) return;
+        if (location.port === "5500") f.action = "http://127.0.0.1:5000/signup";
+      })();
+    </script>
+    <script src="app.js"></script>
+    <script src="auth-bg.js"></script>
+    <script src="auth-errors.js"></script>
+</body>
+</html>

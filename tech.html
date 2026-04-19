@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech — NEXT Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLpro+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="page-tech">
+    <nav class="navbar tech-nav">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" class="tech-nav__logo"><i class="fas fa-gem"></i> NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="tech.html" class="navbar__link tech-nav__link--active">Tech</a></li>
+                <li class="navbar__item"><a href="products.html" class="navbar__link">Products</a></li>
+                <li class="navbar__item"><a href="login.html" class="navbar__link">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="tech-hero">
+        <div class="tech-hero__bg" aria-hidden="true"></div>
+        <div class="tech-hero__inner">
+            <div class="tech-hero__copy">
+                <p class="tech-hero__eyebrow"><span class="tech-hero__dot"></span> Engineering &amp; stack</p>
+                <h1 class="tech-hero__title">OUR TECH</h1>
+                <h2 class="tech-hero__subtitle">STACK &amp; VISION</h2>
+                <p class="tech-hero__lead">Modern tools, reliable delivery, and room to grow—built for teams who ship.</p>
+                <div class="tech-hero__actions">
+                    <a href="index.html" class="tech-btn tech-btn--primary">Back to Home</a>
+                    <a href="login.html" class="tech-btn tech-btn--ghost">Member login</a>
+                </div>
+            </div>
+            <div class="tech-hero__visual">
+                <div class="tech-hero__frame">
+                    <img src="images/pic1.svg" alt="Technology illustration" class="tech-hero__img">
+                </div>
+                <ul class="tech-hero__stats" aria-label="Highlights">
+                    <li><strong>99.9%</strong><span>Uptime focus</span></li>
+                    <li><strong>24/7</strong><span>Monitoring</span></li>
+                    <li><strong>API</strong><span>First design</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="tech-pillars" aria-labelledby="tech-pillars-heading">
+        <h2 id="tech-pillars-heading" class="visually-hidden">What we prioritize</h2>
+        <div class="tech-pillars__grid">
+            <article class="tech-pillar">
+                <div class="tech-pillar__icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Architecture</h3>
+                <p>Clear boundaries, scalable services, and patterns that stay readable as you grow.</p>
+            </article>
+            <article class="tech-pillar">
+                <div class="tech-pillar__icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Security</h3>
+                <p>Sessions, hashing, and sensible defaults—security baked in, not bolted on.</p>
+            </article>
+            <article class="tech-pillar">
+                <div class="tech-pillar__icon"><i class="fas fa-bolt"></i></div>
+                <h3>Performance</h3>
+                <p>Fast pages, lean assets, and tooling that keeps iteration quick.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer__container tech-footer">
+        <p class="website__right">© NEXT 2026, DESIGNED &amp; DEVELOPED BY KAL</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

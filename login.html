@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — NEXT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLpro+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="auth-page">
+        <a href="index.html" class="auth-brand"><i class="fas fa-gem"></i> NEXT</a>
+        <div class="auth-card">
+            <h1 class="auth-card__title">Sign in</h1>
+            <p class="auth-card__subtitle">Welcome back. Enter your details below.</p>
+            <div id="auth-alert" class="auth-alert" hidden></div>
+
+            <form id="auth-login-form" class="auth-form" action="/login" method="post" autocomplete="on">
+                <label class="auth-form__label" for="login-email">Email</label>
+                <input class="auth-form__input" type="email" id="login-email" name="email" placeholder="you@example.com" required>
+
+                <label class="auth-form__label" for="login-password">Password</label>
+                <input class="auth-form__input" type="password" id="login-password" name="password" placeholder="••••••••" required minlength="8">
+
+                <div class="auth-form__row">
+                    <label class="auth-form__check">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#" class="auth-form__link">Forgot password?</a>
+                </div>
+
+                <button class="auth-form__submit" type="submit">Sign in</button>
+            </form>
+
+            <p class="auth-card__footer">No account? <a href="signup.html">Create one</a></p>
+        </div>
+    </main>
+
+    <script>
+      (function () {
+        var f = document.getElementById("auth-login-form");
+        if (!f) return;
+        if (location.port === "5500") f.action = "http://127.0.0.1:5000/login";
+      })();
+    </script>
+    <script src="app.js"></script>
+    <script src="auth-bg.js"></script>
+    <script src="auth-errors.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — NEXT Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLpro+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="page-products">
+    <nav class="navbar products-nav">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" class="products-nav__logo"><i class="fas fa-gem"></i> NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="tech.html" class="navbar__link">Tech</a></li>
+                <li class="navbar__item"><a href="products.html" class="navbar__link products-nav__link--active">Products</a></li>
+                <li class="navbar__item"><a href="login.html" class="navbar__link">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="products-hero">
+        <div class="products-hero__bg" aria-hidden="true"></div>
+        <div class="products-hero__inner">
+            <div class="products-hero__copy">
+                <p class="products-hero__eyebrow"><span class="products-hero__dot"></span> What we ship</p>
+                <h1 class="products-hero__title">OUR PRODUCTS</h1>
+                <h2 class="products-hero__subtitle">BUILT FOR REAL TEAMS</h2>
+                <p class="products-hero__lead">Pick the stack that fits how you work—clear tiers, honest limits, and room to grow when you are ready.</p>
+                <div class="products-hero__actions">
+                    <a href="signup.html" class="products-btn products-btn--primary">Start free</a>
+                    <a href="tech.html" class="products-btn products-btn--ghost">How it works</a>
+                </div>
+            </div>
+            <div class="products-hero__visual">
+                <div class="products-hero__frame">
+                    <img src="images/pic1.svg" alt="Product illustration" class="products-hero__img">
+                </div>
+                <ul class="products-hero__stats" aria-label="Product highlights">
+                    <li><strong>3</strong><span>Tiers</span></li>
+                    <li><strong>API</strong><span>Ready</span></li>
+                    <li><strong>SLA</strong><span>Options</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="products-grid-section" aria-labelledby="products-grid-heading">
+        <h2 id="products-grid-heading" class="visually-hidden">Product lineup</h2>
+        <div class="products-grid">
+            <article class="products-card">
+                <div class="products-card__icon"><i class="fas fa-cube"></i></div>
+                <h3>NEXT Core</h3>
+                <p>Essential dashboards, workflows, and AI assists for small teams getting started.</p>
+                <a href="signup.html" class="products-card__link">Get Core <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="products-card">
+                <div class="products-card__icon"><i class="fas fa-users"></i></div>
+                <h3>NEXT Scale</h3>
+                <p>Shared workspaces, roles, and reporting for growing orgs that need structure without slowdown.</p>
+                <a href="signup.html" class="products-card__link">Talk to sales <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="products-card">
+                <div class="products-card__icon"><i class="fas fa-plug"></i></div>
+                <h3>NEXT Connect</h3>
+                <p>Webhooks and APIs to plug NEXT into the tools you already trust—CRM, data, and more.</p>
+                <a href="tech.html" class="products-card__link">View integrations <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer__container products-footer">
+        <p class="website__right">© NEXT 2026, DESIGNED &amp; DEVELOPED BY KAL</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
